@@ -19,6 +19,8 @@
 ### 依存パッケージをダウンロード
 コマンドプロンプトで下記を実行。
 ```
+cd
+cd go\OJT_01_http
 go get -u github.com/kardianos/govendor
 govendor sync
 ```
