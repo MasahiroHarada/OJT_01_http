@@ -4,16 +4,26 @@
 [https://golang.org/dl/](https://golang.org/dl/)
 ### GOPATHを設定する
 1. ホームフォルダ直下に ```go``` フォルダを作成
-1. 環境変数 ```GOPATH``` に ```%HOME%\go``` を設定
+1. 環境変数 ```GOPATH``` に ```%HOME%\go``` を設定  
+
+最終的に以下のようなフォルダ構成になってほしい。
+```
+%HOME%
+  └ go
+    └ OJT_01_http
+      └ アプリケーションコード
+```
 ### サンプルアプリ展開
 1. zipをダウンロード
 1. ```GOPATH``` 配下に展開
 ### 依存パッケージをダウンロード
+コマンドプロンプトで下記を実行。
 ```
 go get -u github.com/kardianos/govendor
 govendor sync
 ```
 ### アプリをビルドする
+コマンドプロンプトで下記を実行。
 ```
 cd
 cd go\OJT_01_http
